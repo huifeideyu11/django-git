@@ -31,18 +31,43 @@ def ji(ll):
                 num += i
 
         return num
+
+
+def jin(x):
+        '''
+        目的：对于整型列表元素按照由小到大的顺序进行排序
+        参数：
+             x:是列表，元素必须是整型
+        返回值：返回排序后的列表
+
+        '''
+        
+        for i in range(0, len(x)):
+                
+                for k in range(1, len(x)-i):
+                        
+                        if x[k] <= x[k-1]:
+                                mx = x[k-1]
+                                mi = x[k]
+                                x[k] = mx
+                                x[k-1] = mi
+
+        return x
+                                
+                                
                 
 
 if __name__ == '__main__':
-        hb = shuffleHongbao(5, 1000)
-        random.shuffle(hb)
-        print('红包随机分配为：' , hb)
+        #hb = shuffleHongbao(5, 1000)
+        #random.shuffle(hb)
+        #print('红包随机分配为：' , hb)
 
-        print('红包总金额为：', ji(hb))
-        #print(type(hb))
+        #print('红包总金额为：', ji(hb))
         
-
-
+        
+        x = [1,8,9,5,4,3,99,11,53,23]
+        print(range(0, len(x)))
+        print(jin(x))
 
                         
             
