@@ -39,6 +39,7 @@ if __name__ == '__main__':
         print('红包随机分配为：' , hb)
 
         print('红包总金额为：', ji(hb))
+        #print(type(hb))
         
 
 
