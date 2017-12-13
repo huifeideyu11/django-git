@@ -58,7 +58,12 @@ def jin(x):
                 
 
 if __name__ == '__main__':
-               
+            
+        #hb = shuffleHongbao(5, 1000)
+        #random.shuffle(hb)
+        
+        print('加入分支')        
+
         x = [1,8,9,5,4,3,99,11,53]
         print(range(0, len(x)))
         print(jin(x))
