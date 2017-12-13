@@ -58,14 +58,8 @@ def jin(x):
                 
 
 if __name__ == '__main__':
-        #hb = shuffleHongbao(5, 1000)
-        #random.shuffle(hb)
-        #print('红包随机分配为：' , hb)
-
-        #print('红包总金额为：', ji(hb))
-        
-        
-        x = [1,8,9,5,4,3,99,11,53,23]
+               
+        x = [1,8,9,5,4,3,99,11,53]
         print(range(0, len(x)))
         print(jin(x))
 
